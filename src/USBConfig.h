@@ -48,9 +48,9 @@
 
 #elif defined(ARDUINO_ARCH_SAMD)
 
-#include "USB/PluggableUSB.h"
+#include "api/PluggableUSB.h"
 
-#define EPTYPE_DESCRIPTOR_SIZE      uint32_t
+#define EPTYPE_DESCRIPTOR_SIZE      unsigned int
 #define EP_TYPE_BULK_IN_BLASTER     USB_ENDPOINT_TYPE_BULK | USB_ENDPOINT_IN(0);
 #define EP_TYPE_BULK_OUT_BLASTER    USB_ENDPOINT_TYPE_BULK | USB_ENDPOINT_OUT(0);
 #define BLASTER_BUFFER_SIZE         EPX_SIZE
